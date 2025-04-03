@@ -1,0 +1,65 @@
+/* 全体を囲う要素 */
+.archiveBkn__wrap {
+    padding: 20px 0;
+}
+
+    /* 物件情報を囲う要素<ul> */
+    .archiveBkn__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* 個々の物件情報を囲う要素<li> */
+    .archiveBkn__item {
+        margin: 20px 20px 0 0;
+        position: relative;
+        width: 255px;
+        border: solid 1px #eee;
+        box-sizing: border-box;
+    }
+        /* 行の最後の要素のmarginを除去 */
+        .archiveBkn__item:nth-of-type(4n) {
+            margin-right: 0;
+        }
+
+    /* 物件画像 */
+    .archiveBkn__img {
+        height: 190px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f7f7f7;
+    }
+        .archiveBkn__img img {
+            max-width: 100%;
+            max-height: 190px;
+        }
+
+    /* 物件名などの情報 */
+    .archiveBkn__info {
+        padding: 10px;
+    }
+    /* 種別(画像左上) */
+    .archiveBkn__bknTypeName {
+        padding: 3px 5px;
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        color: #fff;
+        font-size: 13px;
+        z-index: 1;
+    }
+    /* 成約価格 */
+    .archiveBkn__price {
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .archiveBkn__contractDate,
+    .archiveBkn__address,
+    .archiveBkn__floor,
+    .archiveBkn__age,
+    .archiveBkn__area {
+        color: #777;
+    }
